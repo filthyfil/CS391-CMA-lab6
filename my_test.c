@@ -1,4 +1,5 @@
 // author: fj
+// edited by: ayaan
 // simple test program
 
 #include <stdint.h>
@@ -9,9 +10,9 @@ static uint32_t sub(uint32_t a, uint32_t b) {
 
 void main(void) {
 	// write to known addresses
-	volatile uint32_t *i = (volatile uint32_t *)0x1000;
-	volatile uint32_t *j = (volatile uint32_t *)0x1004;
-	volatile uint32_t *k = (volatile uint32_t *)0x1008;
+	volatile uint32_t *i = (volatile uint32_t *)0x80001000;
+	volatile uint32_t *j = (volatile uint32_t *)0x80001004;
+	volatile uint32_t *k = (volatile uint32_t *)0x80001008;
 	*i = 1;
 	*j = 1;
 	*k = 1;
